@@ -2,20 +2,20 @@
   const STORE_KEY = "troro-site-content-v1";
   const ENQUIRY_KEY = "troro-site-enquiries-v1";
   const AUTH_KEY = "troro-admin-auth-v1";
-  const ADMIN_PASSWORD = "troro-admin";
+  const ADMIN_PASSWORD = "troro@318";
 
   const defaultData = {
     site: {
       brand: "TRORO",
       legalName: "TRORO INTERNATIONAL",
       description: "Premium surface protection products installed through authorised partners.",
-      phone: "+91 98765 43210",
-      email: "hello@trorointernational.com",
-      address: "TRORO INTERNATIONAL, New Delhi, India",
-      instagram: "https://www.instagram.com/",
-      facebook: "https://www.facebook.com/",
-      linkedin: "https://www.linkedin.com/",
-      youtube: "https://www.youtube.com/"
+      phone: "+91 96060 84313",
+      email: "info@trorointernational.com",
+      address: "TRORO INTERNATIONAL, Bangalore, India",
+      instagram: "https://www.instagram.com/troro_india/",
+      facebook: "https://www.facebook.com/profile.php?id=61558332465431",
+      linkedin: "https://www.linkedin.com/company/trorointernational/?viewAsMember=true",
+      youtube: "https://www.youtube.com/@TRORO.I"
     },
     seo: {
       title: "TRORO INTERNATIONAL | Paint Protection Film, Ceramic Coating, Window Film",
