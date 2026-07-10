@@ -70,14 +70,20 @@ img {
   left: 0;
   right: 0;
   z-index: 20;
+
   height: 76px;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
+
+  display: flex;
   align-items: center;
-  gap: 22px;
-  padding: 0 clamp(18px, 4vw, 42px);
+  justify-content: space-between;
+
+  padding: 0 40px;
+
   color: #fff;
-  transition: background 180ms ease, color 180ms ease, box-shadow 180ms ease;
+
+  transition: background 180ms ease,
+              color 180ms ease,
+              box-shadow 180ms ease;
 }
 
 .masthead.scrolled,
@@ -88,22 +94,17 @@ img {
   backdrop-filter: blur(14px);
 }
 
-.brand {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-  letter-spacing: 0;
+.brand{
+    display:flex;
+    align-items:center;
+    text-decoration:none;
+    flex-shrink:0;
 }
 
-.brand-mark {
-  width: 38px;
-  height: 38px;
-  display: grid;
-  place-items: center;
-  border: 2px solid currentColor;
-  border-radius: 50%;
-  font-weight: 900;
+.brand-logo{
+    width:120px;
+    height:auto;
+    display:block;
 }
 
 .brand strong {
@@ -124,13 +125,11 @@ img {
   display: none;
 }
 
-.primary-nav {
-  justify-self: center;
-  display: flex;
-  align-items: center;
-  gap: 4px;
-  font-weight: 750;
-  font-size: 0.93rem;
+.primary-nav{
+    display:flex;
+    align-items:center;
+    gap:6px;
+    margin-left:auto;
 }
 
 .primary-nav > a,
