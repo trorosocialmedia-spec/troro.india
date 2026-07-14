@@ -455,22 +455,12 @@
     renderHero();
     renderCoverage();
     renderProducts();
-    renderShop();
     renderPartners();
     renderArticles();
     renderFaqs();
     updateMetaAndSchema();
   }
 
-  function renderCoverage() {
-    $("[data-coverage-grid]").innerHTML = data.coverage.map((item) => `
-      <a class="category-card" href="${escapeAttr(safeUrl(item.link))}" data-bg="${escapeAttr(item.image)}">
-        <h3>${escapeHtml(item.title)}</h3>
-        <p>${escapeHtml(item.copy)}</p>
-      </a>
-    `).join("");
-    applyBackgrounds();
-  }
 
   function renderProducts() {
     $("[data-products-grid]").innerHTML = data.products.map((product) => `
