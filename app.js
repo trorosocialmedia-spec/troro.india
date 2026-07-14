@@ -453,7 +453,6 @@
     $("[data-social-youtube]").href = safeUrl(data.site.youtube);
 
     renderHero();
-    renderCoverage();
     renderProducts();
     renderPartners();
     renderArticles();
@@ -861,20 +860,6 @@
     `;
   }
 
-  function editableShop(item, index) {
-    return `
-      <article class="editable-row">
-        <div class="editable-fields">
-          ${inputField("Name", `shop.${index}.name`, item.name)}
-          ${inputField("Price", `shop.${index}.price`, item.price)}
-          ${inputField("Tag", `shop.${index}.tag`, item.tag)}
-          ${inputField("Image URL", `shop.${index}.image`, item.image)}
-          ${fileField("Upload image", `shop.${index}.image`, "full")}
-        </div>
-        <button class="danger-button" type="button" data-delete-shop="${index}">Delete</button>
-      </article>
-    `;
-  }
 
   function editableFaq(faq, index) {
     return `
