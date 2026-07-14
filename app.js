@@ -486,19 +486,6 @@
     applyBackgrounds();
   }
 
-  function renderShop() {
-    $("[data-shop-grid]").innerHTML = data.shop.map((item) => `
-      <article class="shop-card">
-        <div class="card-media" data-bg="${escapeAttr(item.image)}"></div>
-        <div class="card-body">
-          <span class="tag">${escapeHtml(item.tag)}</span>
-          <h3>${escapeHtml(item.name)}</h3>
-          <p class="price">${escapeHtml(item.price)}</p>
-        </div>
-      </article>
-    `).join("");
-    applyBackgrounds();
-  }
 
   function renderPartners() {
     const form = $("[data-locator-filters]");
