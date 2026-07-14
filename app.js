@@ -866,21 +866,6 @@
     `;
   }
 
-  function editableCoverage(item, index) {
-    return `
-      <article class="editable-row">
-        <div class="editable-fields">
-          ${inputField("Title", `coverage.${index}.title`, item.title)}
-          ${inputField("Link", `coverage.${index}.link`, item.link)}
-          ${inputField("Image URL", `coverage.${index}.image`, item.image)}
-          ${fileField("Upload image", `coverage.${index}.image`)}
-          ${textareaField("Copy", `coverage.${index}.copy`, item.copy, "full")}
-        </div>
-        <button class="danger-button" type="button" data-delete-coverage="${index}">Delete</button>
-      </article>
-    `;
-  }
-
 
   function editableFaq(faq, index) {
     return `
@@ -1152,8 +1137,6 @@
       ["data-delete-hero", () => data.hero, (arr, index) => arr.splice(index, 1)],
       ["data-delete-partner", () => data.partners, (arr, index) => arr.splice(index, 1)],
       ["data-delete-product", () => data.products, (arr, index) => arr.splice(index, 1)],
-      ["data-delete-coverage", () => data.coverage, (arr, index) => arr.splice(index, 1)],
-      ["data-delete-shop", () => data.shop, (arr, index) => arr.splice(index, 1)],
       ["data-delete-faq", () => data.faqs, (arr, index) => arr.splice(index, 1)],
       ["data-delete-article", () => data.articles, (arr, index) => arr.splice(index, 1)]
     ];
