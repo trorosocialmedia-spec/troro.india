@@ -702,35 +702,56 @@
   }
 
   function renderProductsAdmin() {
-    return `
-      ${adminHeading("Products")}
-      <div class="admin-panel">
-        <h2>Add product</h2>
-        <form class="admin-form" data-add-product>
-          <label>Product name<input name="title" required></label>
-          <label>Category<input name="category" required></label>
-          <label>Link<input name="link" value="#enquiry"></label>
-          <label>Image URL<input name="image"></label>
-          <label class="full">Description<textarea name="copy" rows="3" required></textarea></label>
-          <button class="primary-button full" type="submit">Add Product</button>
-        </form>
+  return `
+    ${adminHeading("Products")}
+
+    <div class="admin-panel">
+      <h2>Add Product</h2>
+
+      <form class="admin-form" data-add-product>
+
+        <label>
+          Product Name
+          <input name="title" required>
+        </label>
+
+        <label>
+          Category
+          <input name="category" required>
+        </label>
+
+        <label>
+          Link
+          <input name="link" value="#enquiry">
+        </label>
+
+        <label>
+          Image URL
+          <input name="image">
+        </label>
+
+        <label class="full">
+          Description
+          <textarea name="copy" rows="3" required></textarea>
+        </label>
+
+        <button class="primary-button full" type="submit">
+          Add Product
+        </button>
+
+      </form>
+    </div>
+
+    <div class="admin-panel">
+      <h2>Product Cards</h2>
+
+      <div class="admin-list">
+        ${data.products.map((product, index) => editableProduct(product, index)).join("")}
       </div>
-      <div class="admin-panel">
-        <h2>Product cards</h2>
-        <div class="admin-list">${data.products.map((product, index) => editableProduct(product, index)).join("")}</div>
-      </div>
-      <div class="admin-panel">
-        <h2>Coverage cards</h2>
-        <div class="admin-list">${data.coverage.map((item, index) => editableCoverage(item, index)).join("")}</div>
-        <button class="ghost-button" type="button" data-add-coverage>Add Coverage Card</button>
-      </div>
-      <div class="admin-panel">
-        <h2>Shop items</h2>
-        <div class="admin-list">${data.shop.map((item, index) => editableShop(item, index)).join("")}</div>
-        <button class="ghost-button" type="button" data-add-shop>Add Shop Item</button>
-      </div>
-    `;
-  }
+
+    </div>
+  `;
+}
 
   function renderSeoAdmin() {
     return `
