@@ -6,7 +6,7 @@
 
   const defaultData = {
     site: {
-      brand: "TRORO",
+      brand: "TRORO INDIA",
       legalName: "TRORO INTERNATIONAL",
       description: "Premium surface protection products installed through authorised partners.",
       phone: "+91 96060 84313",
