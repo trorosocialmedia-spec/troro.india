@@ -54,68 +54,39 @@
         image: "https://images.unsplash.com/photo-1603386329225-868f9b1ee6c9?auto=format&fit=crop&w=1800&q=85"
       }
     ],
-    coverage: [
-      {
-        title: "Automotive",
-        copy: "Paint protection film, window film, ceramic coating, windshield film, and interiors.",
-        image: "https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1200&q=85",
-        link: "#products"
-      },
-      {
-        title: "Marine",
-        copy: "Protection for marine glass, gelcoat, hull surfaces, and high UV environments.",
-        image: "https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85",
-        link: "#products"
-      },
-      {
-        title: "Architecture",
-        copy: "Solar control, privacy, safety, and decorative window film for homes and offices.",
-        image: "https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=1200&q=85",
-        link: "#products"
-      },
-      {
-        title: "Motorsport",
-        copy: "Track-focused protection packages for high impact panels, glass, and interiors.",
-        image: "https://images.unsplash.com/photo-1533106418989-88406c7cc8ca?auto=format&fit=crop&w=1200&q=85",
-        link: "#products"
-      }
-    ],
     products: [
       {
-        title: "Paint Protection Film",
-        category: "Protection Film",
-        copy: "Self-healing clear film engineered to defend paint against chips, stains, swirls, and daily road impact.",
-        image: "https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1200&q=85",
-        link: "#enquiry"
-      },
-      {
-        title: "Automotive Window Film",
-        category: "Window Film",
-        copy: "Heat rejection and UV protection with a premium cabin look and clear outward visibility.",
-        image: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=1200&q=85",
-        link: "#enquiry"
-      },
-      {
-        title: "Ceramic Coating",
-        category: "Surface Coating",
-        copy: "Hydrophobic gloss protection that helps paint stay cleaner and easier to maintain.",
-        image: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&w=1200&q=85",
-        link: "#enquiry"
-      },
-      {
-        title: "Windshield Protection",
-        category: "Glass Film",
-        copy: "Durable windshield film designed to reduce glass damage risk from debris and highway driving.",
-        image: "https://images.unsplash.com/photo-1525609004556-c46c7d6cf023?auto=format&fit=crop&w=1200&q=85",
-        link: "#enquiry"
-      },
-      {
-        title: "Interior Protection",
-        category: "Interior Film",
-        copy: "Clear film for touchscreens, piano black trims, door sills, and high-contact interior surfaces.",
-        image: "https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=85",
-        link: "#enquiry"
-      }
+  title: "PAINT PROTECTION FILM",
+  items: [
+    "AX10 Premium PPF",
+    "AX7 Premium PPF",
+    "AX6 Black PPF",
+    "AX5 Premium PPF",
+    "AX4 Matte PPF",
+    "AX3 Matte PPF",
+    "Color Paint Protection Film",
+    "Special Bike Paint Protection Film"
+  ]
+},
+{
+  title: "WINDOW FILM",
+  items: [
+    "Ceramic Series",
+    "Skincare Series"
+  ]
+},
+{
+  title: "SUNROOF PROTECTION",
+  items: [
+    "Sunroof Protection Film"
+  ]
+},
+{
+  title: "WINDSHIELD PROTECTION",
+  items: [
+    "Windshield Protector"
+  ]
+}
     ],
     shop: [
       {
